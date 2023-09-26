@@ -16,7 +16,7 @@ html{
 }
 
 body{
-    height: 100vh; 
+    height: 80vh; 
     background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
     background-size: cover;
     background-attachment: fixed; 
@@ -34,16 +34,7 @@ header img{
 
 header{
     display: flex;
-    
-}
 
-header h1 {
-    /* position: absolute; */
-    align-items: left;
-    /* margin-top: 1%; */
-    margin-bottom: -45px;
-    background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
-    margin-top: 0;
 }
 
 .hero-image {
@@ -63,19 +54,32 @@ header h1 {
     flex-direction: row;
     list-style: none;
     /* align-items: right; */
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    /* background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%); */
+    background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
     width: 100%;
- 
+}
 
+.navbar-h1 {
+    margin-right: auto;
+}
 
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    padding-left: 0;
 }
 
 .navbar li{
-    /* margin-right: 10px; */
-    width: 8%;
+    margin-right: 20px;
+    width: 100px;
     margin: 1%;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
 }
 
 /* .navbar ul{
@@ -83,7 +87,7 @@ header h1 {
 
 } */
 
-.navbar a:hover {
+.navbar li:hover {
     color: #189BCC;
     box-shadow: 1px 1px 15px 0px black; 
 
