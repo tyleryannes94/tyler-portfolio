@@ -147,7 +147,7 @@ height: 34%;
 
 .block-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; 
     grid-gap: 2px;
     max-block-size: 1300px;
@@ -162,6 +162,8 @@ height: 34%;
 .block-wrapper{
 display: grid;
 width: 1600px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr; 
 }
 
 .block-item{
@@ -169,7 +171,7 @@ flex-grow: 1;
 }
 
 #double-size{
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .block-item img{
