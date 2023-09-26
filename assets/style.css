@@ -8,7 +8,6 @@ margin-right: 1%;
 
 .linear-gradient-background {
     background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
-    background-size: cover;
 }
 
 header img{
@@ -52,7 +51,8 @@ header h1 {
 
 .navbar a:hover {
     color: #189BCC;
-    box-shadow: 0px 0px 15px 0px black; 
+    box-shadow: 1px 1px 15px 0px black; 
+
 }
 
 /* aside{
@@ -90,6 +90,8 @@ section{
 
 body {
     height: 100vh; 
+    background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
+    background-size: cover;
 }
 
 body article{
@@ -133,36 +135,48 @@ height: 34%;
 }
 
 .linear-gradient-background{
-    background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
+    /* background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%); */
     background-size: cover;
 }
 
-.blocks {
-    display: flex;
-    grid-template-columns: 2,2fr;
-    grid-template-rows: auto; 
+.block-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
     grid-gap: 2px;
-    position: relative;
+    /* position:sticky; */
     /* opacity: .5; */
-    background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
-    align-items: stretch;
-    flex-direction: column;
+    /* background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%); */
+    /* align-items: stretch; */
+    /* flex-direction: column; */
 
 }
 
+.block-wrapper{
+display: grid;
+width: 1600px;
+}
 
+.block-item{
+flex-grow: 1;
+}
 
-.blocks-single img{
-    transition: opacity .3s;
-    opacity: 0.5;
+#double-size{
+    grid-column: span 2;
+}
+
+.block-item img{
+    transition: opacity .2s;
+    opacity: 0.3;
     width: 50%;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* transform: skew(-10deg) */
 }
 
-.blocks-single img:hover {
+.block-item img:hover {
     opacity: 1;
     cursor: grab;
     box-shadow: 0px 0px 15px 0px black;
