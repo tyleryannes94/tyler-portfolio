@@ -16,7 +16,7 @@ html{
 }
 
 body{
-    height: 80vh; 
+    /* height: 80vh;  */
     background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
     background-size: cover;
     background-attachment: fixed; 
@@ -44,9 +44,9 @@ header{
 }
 
 .hero-image img {
-    height: 450px;
+    height: 600px;
     width: 100%; 
-    margin-top: 1%; 
+    /* margin-top: 1%;  */
 }
 
 .navbar{
@@ -58,10 +58,12 @@ header{
     align-items: center;
     background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
     width: 100%;
+    height: 75px;
 }
 
 .navbar-h1 {
     margin-right: auto;
+    margin-left: 20px;
 }
 
 .navbar ul{
@@ -99,10 +101,6 @@ p{
     display: inline-block;
 }
 
-/* @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    } */
 
 section{
     display: flex;
@@ -112,11 +110,6 @@ section{
     position: relative;
 }
 
-/* section img {
-    max-width: 40%;
-    height: auto;
-     margin-right: 10%; 
-} */
 
 body article{
     position: relative;
@@ -126,8 +119,6 @@ body article{
 }
 
 h3{
-    /* position: relative; */
-    /* margin-top: -1%; */
     border-radius: 3px;
     border-color: #189BCC;
     color: white;
@@ -140,8 +131,7 @@ h3{
 
 .about-content{
 display: flex;
-margin-top: 10%;
-margin-bottom: 10%;
+margin-bottom: 2%;
 justify-content: space-between;
 align-items: center;
 height: 34%;
@@ -150,14 +140,14 @@ height: 34%;
 .about-content img {
     width: 50%; 
     max-width: 100%; 
-    height: auto; 
+    height: 700px; 
     flex: 1;
 }
 
 .about-content article {
     width: 50%; 
-    padding: 0 2%; 
     flex: 1;
+    height: 700px;
 }
 
 .linear-gradient-background{
@@ -177,6 +167,8 @@ height: 34%;
     /* align-items: stretch; */
     /* flex-direction: column; */
     max-width: fit-content;
+    height:min-content;
+    margin: ;
 }
 
 .block-wrapper{
@@ -184,10 +176,13 @@ display: grid;
 width: fit-content;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr; 
+row-gap: 1px;
 }
 
 .block-item{
 flex-grow: 1;
+/* max-height: 200px; */
+/* margin: -50px; */
 }
 
 #double-size{
@@ -197,7 +192,7 @@ flex-grow: 1;
 .block-item img{
     transition: opacity .2s;
     opacity: 0.3;
-    width: 50%;
+    width: 65%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -217,4 +212,97 @@ footer{
     background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
     height: 100px;
     max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    /* Stack header elements */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust hero image */
+    .hero-image img {
+        height: auto;
+    }
+
+    /* Stack navbar items */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Stack section elements */
+    section {
+        flex-direction: column;
+    }
+
+    /* Adjust content in about section */
+    .about-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-content img, 
+    .about-content article {
+        width: 100%;
+    }
+
+    /* Adjust block-wrapper for mobile */
+    .block-wrapper {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+        grid-template-rows: auto;
+        
+    }
+
+
+
+    #double-size {
+        grid-column: span 2; /* Span two columns */
+    }
+    .block-item{
+        flex-grow: 2;
+        /* max-block-size: 200px; */
+        }
+        
+    #block-item-last{
+        grid-column: span 2;
+    }
+
+    .block-item img{
+        transition: opacity .2s;
+        opacity: 0.3;
+        width: 50%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* transform: skew(-10deg) */
+    }
+
+    .block-item img:hover {
+        opacity: 1;
+        cursor: grab;
+        box-shadow: 0px 0px 15px 0px black;
+        background-color: #189BCC;
+    }
+
+
+    footer{
+        background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
+        height: 100px;
+        max-width: 100%;
+    }
 }
