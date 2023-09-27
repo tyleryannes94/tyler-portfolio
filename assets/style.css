@@ -131,10 +131,10 @@ h3{
 
 .about-content{
 display: flex;
-margin-bottom: 2%;
+/* margin-bottom: 2%; */
 justify-content: space-between;
 align-items: center;
-height: 34%;
+height: 700px;
 }
 
 .about-content img {
@@ -147,7 +147,14 @@ height: 34%;
 .about-content article {
     width: 50%; 
     flex: 1;
-    height: 700px;
+    /* height: auto; */
+    /* height: 700px; */
+}
+
+#about-h1 {
+    font-size: 50px;
+    border-bottom:  2px solid black;
+    box-shadow: 50% #189BCC;
 }
 
 .linear-gradient-background{
