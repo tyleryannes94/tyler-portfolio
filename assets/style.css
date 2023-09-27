@@ -59,6 +59,8 @@ header{
     background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
     width: 100%;
     height: 75px;
+    border-bottom:  1px solid black;
+
 }
 
 .navbar-h1 {
@@ -134,13 +136,13 @@ display: flex;
 /* margin-bottom: 2%; */
 justify-content: space-between;
 align-items: center;
-height: 700px;
+height: 600px;
 }
 
 .about-content img {
     width: 50%; 
     max-width: 100%; 
-    height: 700px; 
+    height: 600px; 
     flex: 1;
 }
 
@@ -149,12 +151,27 @@ height: 700px;
     flex: 1;
     /* height: auto; */
     /* height: 700px; */
+    
 }
 
 #about-h1 {
     font-size: 50px;
     border-bottom:  2px solid black;
     box-shadow: 50% #189BCC;
+}
+
+.mywork-h1{
+    font-size: 50px;
+    /* border-bottom:  2px solid black; */
+    /* background-color: #189BCC; */
+    /* background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%); */
+    align-content: center;
+    /* margin-left: 50%; */
+
+}
+#mywork-h1-bottomborder{
+    border-bottom:  2px solid black;
+
 }
 
 .linear-gradient-background{
