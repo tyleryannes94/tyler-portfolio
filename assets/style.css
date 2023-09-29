@@ -2,6 +2,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: monospace;
 
 
 }
@@ -37,7 +38,7 @@ header{
 }
 
 .hero-image img {
-    height: 600px;
+    height: 700px;
     width: 100%; 
 }
 
@@ -95,6 +96,7 @@ header{
 p{
     max-width: 100%;
     display: inline-block;
+    font-size: 16px;
 }
 
 
@@ -235,10 +237,38 @@ width: 100%;
     color: white; 
 }
 
+#github-link{
+
+}
+
+#linkedin-link{
+
+}
+
+#pubic-link{
+
+}
+
+#coding-link{
+
+}
+
+#about-link{
+
+}
+
+#email-link{
+    
+}
+
 footer{
     background-color:  #189BCC;
     height: 100px;
     max-width: 100%;
+}
+
+footer p {
+    margin-left: 50px;
 }
 
 @media only screen and (max-width: 768px) {

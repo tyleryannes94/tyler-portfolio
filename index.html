@@ -13,10 +13,10 @@
             <h1 class="navbar-h1">Tyler Yannes</h1>
             <nav>
                 <ul >
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#github-link">Github</a></li>
+                    <li><a href="#linkedin-link">LinkedIn</a></li>
+                    <li><a href="#about-link">About Me</a></li>
+                    <li><a href="#email-link">Contact Me</a></li>
                 </ul>
             </nav>
 
@@ -26,7 +26,7 @@
     </section>
 
     <!-- About me styles -->
-    <section class="about-container">
+    <section class="about-container" id="about-link">
         <img class="about-img" src="./assets/images/conference-image.png" alt="Image of Tyler on a stage presenting"/>
         <article class="about-content">
             <h1 id="about-h1">About Me</h1>
@@ -47,13 +47,16 @@
         <p>
             In March of 2023, I was promoted to a hybrid Product Manager role where I assist our engineers
             in scoping out new features, managing the launch of the feature, and writing out training docs.
-        </p>             <br></br>
-
-            As a Product Manager, I manage our Data Team which includes scoping out all of our platform's analytics, coordinating with our engineers on the
+        </p>   
+        <br></br>
+        <p>          
+            As a Product Manager, I manage our Data Team which includes scoping out all of our platform's analytics, 
+            coordinating with our engineers on the
             build, run the QA process, train employees on how to use analytics with clients, and write
             external facing documentation for our clients. I managed the launch of our platform's internal analytics which
             includes 6 data dashboards to showcase to merchants the value of our platform as well as understanding the 
             behavior of subscriptions.
+        </p>
         </p>
         <br></br>
             <p>
@@ -68,36 +71,52 @@
             </section>
 
     <!-- Portfolio block styles -->
-            <section>
-            <h1 class="mywork-h1" id="mywork-h1-bottomborder"> My Work</h1>
-         </section>  
-    <main class="block-container">
-        <div class="block-wrapper">
-        
-        <section class="block-item" id="double-size">
-            <h3>Public Speaking</h3>
-            <img src="./assets/images/public speaking.jpg" alt="Image of Tyler public speaking"/>
+    <section>
+        <h1 class="mywork-h1" id="mywork-h1-bottomborder"> My Work</h1>
+     </section>  
+<main class="block-container">
+    <div class="block-wrapper">
+    
+    <section class="block-item" id="double-size"> 
+        <h3 class="pubic-link">LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/tyler-yannes" target="_blank">
+        <img src="./assets/images/public speaking.jpg" alt="Image of Tyler public speaking"/>
+    </a>
+    </section>
+
+    
+        <section class="block-item">
+            <h3 id="github-link">Github</h3>
+            <a href="https://github.com/tyleryannes94" target="_blank">
+                <img src="./assets/images/prework study guide.png" alt="Screenshot of the study guide"/>
+            </a>
+            </section>
+    
+        <section class="block-item">
+            <h3 id="linkedin-link">Coding Course Challenge 1</h3>
+            <a href="https://github.com/tyleryannes94/module-1-challenge" target="_blank">
+                <img src="./assets/images/project 1.png" alt="Screenshot of module 1 challenge"/>
+            </a>
         </section>
 
-            <section class="block-item" >
-                <h3>Github</h3>
-                <img src="./assets/images/prework study guide.png" alt="Screenshot of the study guide"/>
-                </section>
+        <section class="block-item" id="block-item-last">
+            <h3 id="coding-link">Coding Certificates</h3>
+            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/10cbaaa5ab478f679aeb424201bd5839f6006d50" target="_blank">
+            <img src="./assets/images/coding certificate.png" alt="Screenshot of a coding certificate from Datacamp">
+            </a>
+        </section>
+    </div>
+    </main>
 
-            <section class="block-item" >
-                <h3>LinkedIn</h3>
-                <img src="./assets/images/project 1.png" alt="Screenshot of module 1 challenge"/>
-            </section>
-
-            <section class="block-item" id="block-item-last">
-                <h3>Coding Certificates</h3>
-                <img src="./assets/images/coding certificate.png" alt="Screenshot of a coding certificate from Datacamp">
-            </section>
-        </div>
-        </main>
 
     <!-- Footer styles -->
-        <footer>
-            <p>Email: tyler.yannes@gmail.com</p>
+        <footer id="email-link">
+            <p><strong>Email:</strong> <a href="mailto:tyler.yannes@gmail.com">tyler.yannes@gmail.com</a></p>
+            <br>
+            <p> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tyler-yannes" target="_blank">Tyler's LinkedIn </a> </p>
+            <br>
+            <p> <strong>Github: </strong><a href="https://github.com/tyleryannes94" target="_blank">Tyler's Github</a> </p>
+            <br>
+            <p> <strong>Employer:</strong> <a href="https://skio.com/team/" target="_blank"> Skio </a></p>
         </footer>
 </body>
