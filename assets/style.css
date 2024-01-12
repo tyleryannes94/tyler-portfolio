@@ -7,10 +7,6 @@ font-family: monospace;
 
 }
 
-.linear-gradient-background {
-    background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
-}
-
 html{
     margin: 0;
     padding: 0;
@@ -26,6 +22,12 @@ body{
     margin: 0;
 
 }
+
+.linear-gradient-background {
+    background-image: linear-gradient(rgba(24,155,204,0.4) 0%, rgba(24,155,204,0.6) 100%);
+}
+
+
 
 header{
     display: flex;
